@@ -3,15 +3,17 @@
     <head>
         <script src="jquery-3.6.0.min.js"></script>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Przegrywarka.pl - Twoje studio digitalizacji</title>
         <link rel="stylesheet" href="styl.css">
     </head>
     <body>
         <div class="banner" id="banner">
-            <img src="Obrazki/LogoStrony.png" width="50%" height="50%" alt="logo">
+            <img class="logo"src="Obrazki/LogoStrony.png"  alt="logo">
         </div>
         <div class="menu" id="menu">
-            <div class="lista">
+            <button class="rozwijaneMenuGuzik">MENU</button>
+            <div class="lista rozwijaneMenuTresc">
                 <ul>
                     <li class="li-aktywne"><a href="index.html">STRONA GŁÓWNA</a></li>
                     <li><a href="oferta.html">OFERTA</a></li>
@@ -133,6 +135,7 @@
                         <br>
                         <p>Nie czekaj aż będzie za późno, a twoje wspomnienia zapisane m.in na taśmach video ulegną bezpowrotnemu zniszczeniu. Wybierz mądrze i skorzystaj z profesjonalnych usług studia Przegrywarka.pl</p>
                     </div>
+                    <br>
                     <div class="digi" style="font-size:115%;">
                         <p style="font-weight:bold;font-size: 125%;text-align: center;">Zalety przegrywania danych</p>
                         <br>
@@ -234,6 +237,22 @@
         <div class="stopka" id="stopka">
             <div class="lewo">Krzysztof Janicki Grupa 2</div> 
         </div>
+        <script>
+                var rozw = document.getElementsByClassName("rozwijaneMenuGuzik");
+                var i;
+                
+                for (i = 0; i < rozw.length; i++) {
+                  rozw[i].addEventListener("click", function() {
+                    this.classList.toggle("rozwijaneMenuActive");
+                    var rozwijaneMenuTresc = this.nextElementSibling;
+                    if (rozwijaneMenuTresc.style.maxHeight){
+                        rozwijaneMenuTresc.style.maxHeight = null;
+                    } else {
+                        rozwijaneMenuTresc.style.maxHeight = rozwijaneMenuTresc.scrollHeight + "px";
+                    } 
+                  });
+                }
+            </script>
         <script>
             var H = $('#banner').height() + $('#menu').height() + $('#stopka').height();
             $("#tlo").css('min-height',"calc(100vh - " + H + "px )");

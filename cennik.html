@@ -2,7 +2,7 @@
 <html lang="pl-PL">
     <head>
         <script src="jquery-3.6.0.min.js"></script>
-        <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Przegrywarka.pl - Twoje studio digitalizacji</title>
         <link rel="stylesheet" href="styl.css">
     </head>
@@ -11,7 +11,8 @@
         <img src="Obrazki/LogoStrony.png" width="50%" height="50%">
       </div>
         <div class="menu" id="menu">
-            <div class="lista">
+          <button class="rozwijaneMenuGuzik">MENU</button>
+          <div class="lista rozwijaneMenuTresc">
                 <ul>
                     <li><a href="index.html">STRONA GŁÓWNA</a></li>
                     <li><a href="oferta.html">OFERTA</a></li>
@@ -333,6 +334,22 @@
             <span class="lewo">Krzysztof Janicki Grupa 2</span> 
         </div>
     </body>
+    <script>
+      var rozw = document.getElementsByClassName("rozwijaneMenuGuzik");
+      var i;
+      
+      for (i = 0; i < rozw.length; i++) {
+        rozw[i].addEventListener("click", function() {
+          this.classList.toggle("rozwijaneMenuActive");
+          var rozwijaneMenuTresc = this.nextElementSibling;
+          if (rozwijaneMenuTresc.style.maxHeight){
+              rozwijaneMenuTresc.style.maxHeight = null;
+          } else {
+              rozwijaneMenuTresc.style.maxHeight = rozwijaneMenuTresc.scrollHeight + "px";
+          } 
+        });
+      }
+  </script>
     <script>
             var H = $('#banner').height() + $('#menu').height() + $('#stopka').height();
             $("#tlo").css('min-height',"calc(100vh - " + H + "px )");

@@ -956,6 +956,11 @@ video{
 	display: flex;
 	flex-direction: column;
 }
+.digi{
+	width: 50%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
 @media only screen and (max-width: 1650px){
 	.tresc{
 		width: 85%;
@@ -1070,6 +1075,17 @@ video{
 @media only screen and (max-width: 800px){
 	body{
 		font-size: 32px;
+		
+	}
+	.popularne{
+		flex-direction: column;
+	}
+	.digi{
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	.digitalizacja{
+		flex-direction: column;
 	}
 }
 @media only screen and (max-width: 500px){

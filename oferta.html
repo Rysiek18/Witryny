@@ -1,0 +1,627 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <meta charset="utf-8">
+        <title>Przegrywarka.pl - Twoje studio digitalizacji</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <div class="banner" id="banner">
+            <img src="Obrazki/LogoStrony.png" width="50%" height="50%" alt="logo">
+        </div>
+        <div class="menu" id="menu">
+            <div class="lista">
+                <ul>
+                    <li ><a href="index.html">STRONA GŁÓWNA</a></li>
+                    <li class="li-aktywne"><a href="oferta.html">OFERTA</a></li>
+                    <li><a href="cennik.html">CENNIK</a></li>
+                    <li><a href="zamawianie.html">JAK ZAMAWIAĆ</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="tlo" id="tlo">
+            <div class="tresc" id="tresc">
+                <div class="uslugi_menu">
+                        <div style="background-color:#333;width: 100%;height:50px;display:flex;justify-content: center;align-items: center;">
+                            <p class="filtrowanie">Jakie nośniki obsługujemy</p>
+                        </div>
+                        
+                        <div class="menuav" style="padding: 1%;font-size: 120%;">
+                        <br>
+                        <div class="menuvideo">
+                        <p style="font-weight: bold;font-size: 120%;">Nośniki Video</p>
+                        <hr style="width:80%;margin-left: 15px;">
+                        <br>
+                        <div>
+                            <p style="font-weight: bold;">Taśmy analogowe</p>
+                            <ul>
+                                <li>VHS, SVHS</li>
+                                <li>VHS-C, SVHS-C</li>
+                            </ul>
+                            <br>
+                            <p style="font-style: italic;text-align: justify;">Wspieramy systemy PAL, SECAM oraz NTSC. W przypadku systemu innego niż PAL nie gwarantujemy dostępności TBC</p>
+                            <br>
+                            <p style="font-weight: bold;">Taśmy cyfrowe</p>
+                            <ul>
+                                <li>MiniDV</li>
+                            </ul>
+                            <br>
+                            <p style="font-style: italic;text-align: justify;">Taśmy MiniDV wspieramy tylko nagrane w systemie PAL w trybie SP</p>
+                        </div>
+                        </div>
+                        <br>
+                        <div class="menuaudio">
+                        <p style="font-weight: bold;font-size: 120%;">Nośniki Audio</p>
+                        <hr style="width:80%;margin-left: 15px;">
+                        <br>
+                        <div>
+                            <p style="font-weight: bold;">Płyty winylowe</p>
+                            <ul>
+                                <li>7 cali (Single)</li>
+                                <li>10 cali (EP)</li>
+                                <li>12 cali (Maxi-Single, LP)</li>
+                            </ul>
+                            <br>
+                            <p style="font-style: italic;text-align: justify;">Wspieramy tylko prędkości 33 oraz 45RPM</p>
+                            <br>
+                            <p style="font-weight: bold;">Kasety magetofonowe</p>
+                            <ul>
+                                <li>Typ I (Normalne)</li>
+                                <li>Typ II (Chromowe)</li>
+                                <li>Typ IV (Metalowe)</li>
+                            </ul>
+                            <br>
+                            <p style="font-style: italic;text-align: justify;">Wspieramy wszystkie tryby DOLBY NR</p>
+                            <br>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            <div class="uslugi_tresc">
+                <div class="uslugi_widok">
+                    <span style="padding-left:2%;width:65%;">Liczba znalezionych usług: 9</span>
+                <span style="padding-right:2%;width:35%;text-align:right;">
+                    <input class="guzikwybor1 guzikwybor1_styl" type="button" value="Widok Siatki" id="siatka">
+                    <input class="guzikwybor2 guzikwybor2_styl" type="button" value="Widok Listy" id="lista">
+                </span>
+                </div>
+                <div class='produkty'><span class='item item_styl' id='produkt'>
+                            <a href='http://stackoverflow.com' class='item_a item_a_styl' style='display:flex;flex-direction: column;'>
+                                        <span class='item_span1 item_span1_styl'>
+                                            
+                                            <img class='item_img item_img_styl' src='Media/Zdjęcia/vhs.png'>
+                                            <h6 class='item_h6 item_h6_styl'>Przegranie kasety VHS, VHS-C, SVHS, SVHS-C na płytę DVD lub do pliku video (AVI, MP4, MPEG)</h6>
+
+                                        </span>
+                                    
+                                        <span class='item_span2 item_span2_styl'>
+                                            
+                                            <pre>Cena już od: </pre>
+                                                <span class='item_span3 item_span3_styl'> 
+                                                    30zł
+                                                </span>
+                                        </span>
+                                        </a>
+                                        <span class='item_guzik item_guzik_styl'>
+                                        <span class='span_lista_4'>
+                                            
+                                            Cena już od: 
+                                                <span class='item_span3 item_span3_styl'> 
+                                                    30zł
+                                                </span>
+                                                <button style='margin: 0 auto;padding:3%;display:inline-block;font-size:70%;cursor:pointer;'><a style='color:black;text-decoration:none'href='http://stackoverflow.com'>Sprawdź</a></button>
+
+                                        </span>
+                                        </span>
+                                        
+                                </span><span class='item item_styl' id='produkt'>
+                            <a href='http://stackoverflow.com' class='item_a item_a_styl' style='display:flex;flex-direction: column;'>
+                                        <span class='item_span1 item_span1_styl'>
+                                            
+                                            <img class='item_img item_img_styl' src='Media/Zdjęcia/winyl.png'>
+                                            <h6 class='item_h6 item_h6_styl'>Przegranie płyty winylowej na płytę CD lub do pliku audio (MP3, FLAC, WAV)</h6>
+
+                                        </span>
+                                    
+                                        <span class='item_span2 item_span2_styl'>
+                                            
+                                            <pre>Cena już od: </pre>
+                                                <span class='item_span3 item_span3_styl'> 
+                                                    30zł
+                                                </span>
+                                        </span>
+                                        </a>
+                                        <span class='item_guzik item_guzik_styl'>
+                                        <span class='span_lista_4'>
+                                            
+                                            Cena już od: 
+                                                <span class='item_span3 item_span3_styl'> 
+                                        30zł
+                                    </span>
+                                    <button style='margin: 0 auto;padding:3%;display:inline-block;font-size:70%;cursor:pointer;'><a style='color:black;text-decoration:none'href='http://stackoverflow.com'>Sprawdź</a></button>
+
+                            </span>
+                            </span>
+                            
+                    </span><span class='item item_styl' id='produkt'>
+                <a href='http://stackoverflow.com' class='item_a item_a_styl' style='display:flex;flex-direction: column;'>
+                            <span class='item_span1 item_span1_styl'>
+                                
+                                <img class='item_img item_img_styl' src='Media/Zdjęcia/kaseta.png'>
+                                <h6 class='item_h6 item_h6_styl'>Przegranie kasety magnetofonowej na płytę CD lub do pliku audio (MP3, FLAC, WAV)</h6>
+
+                            </span>
+                           
+                            <span class='item_span2 item_span2_styl'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span class='item_span3 item_span3_styl'> 
+                                        25zł
+                                    </span>
+                            </span>
+                            </a>
+                            <span class='item_guzik item_guzik_styl'>
+                            <span class='span_lista_4'>
+                                
+                                Cena już od: 
+                                    <span class='item_span3 item_span3_styl'> 
+                                        25zł
+                                    </span>
+                                    <button style='margin: 0 auto;padding:3%;display:inline-block;font-size:70%;cursor:pointer;'><a style='color:black;text-decoration:none'href='http://stackoverflow.com'>Sprawdź</a></button>
+
+                            </span>
+                            </span>
+                            
+                    </span><span class='item item_styl' id='produkt'>
+                <a href='http://stackoverflow.com' class='item_a item_a_styl' style='display:flex;flex-direction: column;'>
+                            <span class='item_span1 item_span1_styl'>
+                                
+                                <img class='item_img item_img_styl' src='Media/Zdjęcia/kaseta.png'>
+                                <h6 class='item_h6 item_h6_styl'>Duplikacja płyty CD na kasetę magnetofonową</h6>
+
+                            </span>
+                           
+                            <span class='item_span2 item_span2_styl'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span class='item_span3 item_span3_styl'> 
+                                        30zł
+                                    </span>
+                            </span>
+                            </a>
+                            <span class='item_guzik item_guzik_styl'>
+                            <span class='span_lista_4'>
+                                
+                                Cena już od: 
+                                    <span class='item_span3 item_span3_styl'> 
+                                        30zł
+                                    </span>
+                                    <button style='margin: 0 auto;padding:3%;display:inline-block;font-size:70%;cursor:pointer;'><a style='color:black;text-decoration:none'href='http://stackoverflow.com'>Sprawdź</a></button>
+
+                            </span>
+                            </span>
+                            
+                    </span><span class='item item_styl' id='produkt'>
+                <a href='http://stackoverflow.com' class='item_a item_a_styl' style='display:flex;flex-direction: column;'>
+                            <span class='item_span1 item_span1_styl'>
+                                
+                                <img class='item_img item_img_styl' src='Media/Zdjęcia/dvdr.png'>
+                                <h6 class='item_h6 item_h6_styl'>Duplikacja płyty DVD (Kopia na płytę DVD)</h6>
+
+                            </span>
+                           
+                            <span class='item_span2 item_span2_styl'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span class='item_span3 item_span3_styl'> 
+                                        20zł
+                                    </span>
+                            </span>
+                            </a>
+                            <span class='item_guzik item_guzik_styl'>
+                            <span class='span_lista_4'>
+                                
+                                Cena już od: 
+                                    <span class='item_span3 item_span3_styl'> 
+                                        20zł
+                                    </span>
+                                    <button style='margin: 0 auto;padding:3%;display:inline-block;font-size:70%;cursor:pointer;'><a style='color:black;text-decoration:none'href='http://stackoverflow.com'>Sprawdź</a></button>
+
+                            </span>
+                            </span>
+                            
+                    </span><span class='item item_styl' id='produkt'>
+                <a href='http://stackoverflow.com' class='item_a item_a_styl' style='display:flex;flex-direction: column;'>
+                            <span class='item_span1 item_span1_styl'>
+                                
+                                <img class='item_img item_img_styl' src='Media/Zdjęcia/vhs.png'>
+                                <h6 class='item_h6 item_h6_styl'>Duplikacja płyty DVD na kasetę VHS/SVHS</h6>
+
+                            </span>
+                           
+                            <span class='item_span2 item_span2_styl'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span class='item_span3 item_span3_styl'> 
+                                        25zł
+                                    </span>
+                            </span>
+                            </a>
+                            <span class='item_guzik item_guzik_styl'>
+                            <span class='span_lista_4'>
+                                
+                                Cena już od: 
+                                    <span class='item_span3 item_span3_styl'> 
+                                        25zł
+                                    </span>
+                                    <button style='margin: 0 auto;padding:3%;display:inline-block;font-size:70%;cursor:pointer;'><a style='color:black;text-decoration:none'href='http://stackoverflow.com'>Sprawdź</a></button>
+
+                            </span>
+                            </span>
+                            
+                    </span><span class='item item_styl' id='produkt'>
+                <a href='http://stackoverflow.com' class='item_a item_a_styl' style='display:flex;flex-direction: column;'>
+                            <span class='item_span1 item_span1_styl'>
+                                
+                                <img class='item_img item_img_styl' src='Media/Zdjęcia/cdr.png'>
+                                <h6 class='item_h6 item_h6_styl'>Nagranie dostarczonego materiału na płytę CD/DVD</h6>
+
+                            </span>
+                           
+                            <span class='item_span2 item_span2_styl'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span class='item_span3 item_span3_styl'> 
+                                        25zł
+                                    </span>
+                            </span>
+                            </a>
+                            <span class='item_guzik item_guzik_styl'>
+                            <span class='span_lista_4'>
+                                
+                                Cena już od: 
+                                    <span class='item_span3 item_span3_styl'> 
+                                        25zł
+                                    </span>
+                                    <button style='margin: 0 auto;padding:3%;display:inline-block;font-size:70%;cursor:pointer;'><a style='color:black;text-decoration:none'href='http://stackoverflow.com'>Sprawdź</a></button>
+
+                            </span>
+                            </span>
+                            
+                    </span><span class='item item_styl' id='produkt'>
+                <a href='http://stackoverflow.com' class='item_a item_a_styl' style='display:flex;flex-direction: column;'>
+                            <span class='item_span1 item_span1_styl'>
+                                
+                                <img class='item_img item_img_styl' src='Media/Zdjęcia/vhs.png'>
+                                <h6 class='item_h6 item_h6_styl'>Nagranie dostarczonego materiału na kasetę VHS/SVHS</h6>
+
+                            </span>
+                           
+                            <span class='item_span2 item_span2_styl'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span class='item_span3 item_span3_styl'> 
+                                        30zł
+                                    </span>
+                            </span>
+                            </a>
+                            <span class='item_guzik item_guzik_styl'>
+                            <span class='span_lista_4'>
+                                
+                                Cena już od: 
+                                    <span class='item_span3 item_span3_styl'> 
+                                        30zł
+                                    </span>
+                                    <button style='margin: 0 auto;padding:3%;display:inline-block;font-size:70%;cursor:pointer;'><a style='color:black;text-decoration:none'href='http://stackoverflow.com'>Sprawdź</a></button>
+
+                            </span>
+                            </span>
+                            
+                    </span><span class='item item_styl' id='produkt'>
+                <a href='http://stackoverflow.com' class='item_a item_a_styl' style='display:flex;flex-direction: column;'>
+                            <span class='item_span1 item_span1_styl'>
+                                
+                                <img class='item_img item_img_styl' src='Media/Zdjęcia/internet.png'>
+                                <h6 class='item_h6 item_h6_styl'>Udostępnienie przegranych plików do pobrania z Internetu</h6>
+
+                            </span>
+                           
+                            <span class='item_span2 item_span2_styl'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span class='item_span3 item_span3_styl'> 
+                                        10zł
+                                    </span>
+                            </span>
+                            </a>
+                            <span class='item_guzik item_guzik_styl'>
+                            <span class='span_lista_4'>
+                                
+                                Cena już od: 
+                                    <span class='item_span3 item_span3_styl'> 
+                                        10zł
+                                    </span>
+                                    <button style='margin: 0 auto;width:auto;;padding:3%;display:inline-block;font-size:70%;cursor:pointer;'><a style='color:black;text-decoration:none'href='http://stackoverflow.com'>Sprawdź</a></button>
+
+                            </span>
+                            </span>
+                            
+                    </span></div>    <br>
+    <br>
+    <hr style="width:80%;margin-left:10%">
+    <br>
+    <p style="text-align:center;font-size:x-large;font-weight:bold">Zobacz także</p>
+    <br>
+    <hr style="width:80%;margin-left:10%">
+    <br>
+    <div class='produkty'><span class='uslugi_wynik' id='produkt'>
+                <a href='http://stackoverflow.com' style='display:flex;flex-direction: column;	text-decoration:none;width:100%; height: 100%; color:black;'>
+                            <span style='height: 90%;padding-bottom: 2%'>
+                                
+                                <img class='imgresp' src='Media/Zdjęcia/vhs.png'>
+                                <h6>Przegranie kasety video do pliku video (AVI, MP4, MPEG) na dysk klienta</h6>
+
+                            </span>
+                           
+                            <span style='display: flex;justify-content:center;height: 10%;vertical-align: bottom;'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span style='display: block;font-weight: bold;'> 
+                                        30zł
+                                    </span>
+                            </span>
+                            </a>
+                </span><span class='uslugi_wynik' id='produkt'>
+                <a href='http://stackoverflow.com' style='display:flex;flex-direction: column;	text-decoration:none;width:100%; height: 100%; color:black;'>
+                            <span style='height: 90%;padding-bottom: 2%'>
+                                
+                                <img class='imgresp' src='Media/Zdjęcia/kaseta.png'>
+                                <h6>Nagranie dostarczonego materiału na kasetę magnetofonową</h6>
+
+                            </span>
+                           
+                            <span style='display: flex;justify-content:center;height: 10%;vertical-align: bottom;'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span style='display: block;font-weight: bold;'> 
+                                        25zł
+                                    </span>
+                            </span>
+                            </a>
+                </span><span class='uslugi_wynik ostatni' id='produkt'>
+                <a href='http://stackoverflow.com' style='display:flex;flex-direction: column;	text-decoration:none;width:100%; height: 100%; color:black;'>
+                            <span style='height: 90%;padding-bottom: 2%'>
+                                
+                                <img class='imgresp' src='Media/Zdjęcia/minidv.png'>
+                                <h6>Przegranie kasety MiniDV na płytę DVD lub do pliku video (AVI, MP4, MPEG)</h6>
+
+                            </span>
+                           
+                            <span style='display: flex;justify-content:center;height: 10%;vertical-align: bottom;'>
+                                
+                                <pre>Cena już od: </pre>
+                                    <span style='display: block;font-weight: bold;'> 
+                                        35zł
+                                    </span>
+                            </span>
+                            </a>
+                </span><p style='margin:2%;color: #444; text-align: center'>To nie jest oferta. Podane ceny nie stanowią oferty handlowej w rozumieniu art. 66 kodeksu cywilnego. Ostateczna cena zostanie podana po dostarczeniu i zweryfikowaniu zadeklarowanego nośnika i będzie uzależniona od wybranych usług.</p></div></div>
+
+<script>
+$(document).ready(function() {
+  $('#lista').click(function(event) {
+    event.preventDefault()
+    $(".item").addClass("uslugi_wynik_lista");
+          $(".item_img").addClass("imgresp_lista");
+          $(".item_h6").addClass("h6_lista");
+          $(".item_span1").addClass("span_lista_1");
+          $(".item_span2").addClass("span_lista_2");
+          $(".item_span3").addClass("span_lista_3");
+          $(".item_guzik").addClass("guzik_lista");
+          $(".item_a").addClass("a_lista");
+          $(".guzikwybor1").addClass("guzikwybor_zwykly");
+          $(".guzikwybor2").addClass("guzikwybor_wybrany");
+          $(".item").removeClass("uslugi_wynik_siatka");
+          $(".item_img").removeClass("imgresp_siatka");
+          $(".item_h6").removeClass("h6_siatka");
+          $(".item_span1").removeClass("span_siatka_1");
+          $(".item_span2").removeClass("span_siatka_2");
+          $(".item_span3").removeClass("span_siatka_3");
+          $(".item_guzik").removeClass("guzik_siatka");
+          $(".guzikwybor2").removeClass("guzikwybor_zwykly");
+          $(".guzikwybor1").removeClass("guzikwybor_wybrany");
+          $(".item_a").removeClass("a_siatka");
+          $(".item").removeClass("item_styl");
+          $(".item_img").removeClass("item_img_styl");
+          $(".item_h6").removeClass("item_h6_styl");
+          $(".item_span1").removeClass("item_span1_styl");
+          $(".item_span2").removeClass("item_span2_styl");
+          $(".item_span3").removeClass("item_span3_styl");
+          $(".item_guzik").removeClass("item_guzik_styl");
+          $(".item_a").removeClass("item_a_styl");
+          $(".guzikwybor1").removeClass("guzikwybor1_styl");
+          $(".guzikwybor2").removeClass("guzikwybor2_styl");
+
+
+          localStorage.setItem('item', 'uslugi_wynik_lista')
+          localStorage.setItem('item_styl', 'item_styl')
+          localStorage.setItem('item_img', 'imgresp_lista')
+          localStorage.setItem('item_img_styl', 'item_img_styl')
+          localStorage.setItem('item_h6', 'h6_lista')
+          localStorage.setItem('item_h6_styl', 'item_h6_styl')
+          localStorage.setItem('item_span1', 'span_lista_1')
+          localStorage.setItem('item_span1_styl', 'item_span1_styl')
+          localStorage.setItem('item_span2', 'span_lista_2')
+          localStorage.setItem('item_span2_styl', 'item_span2_styl')
+          localStorage.setItem('item_span3', 'span_lista_3')
+          localStorage.setItem('item_span3_styl', 'item_span3_styl')
+          localStorage.setItem('item_guzik', 'guzik_lista')
+          localStorage.setItem('item_guzik_styl', 'item_guzik_styl')
+          localStorage.setItem('item_a', 'a_lista')
+          localStorage.setItem('item_a_styl', 'item_a_styl')
+
+          localStorage.setItem('guzikwybor1', 'guzikwybor_zwykly')
+          localStorage.setItem('guzikwybor1_styl', 'guzikwybor1_styl')
+          localStorage.setItem('guzikwybor2', 'guzikwybor_wybrany')
+          localStorage.setItem('guzikwybor2_styl', 'guzikwybor2_styl')
+  });
+  $('#siatka').click(function(event){
+    event.preventDefault();
+    $(".item").addClass("uslugi_wynik_siatka");
+          $(".item_img").addClass("imgresp_siatka");
+          $(".item_h6").addClass("h6_siatka");
+          $(".item_span1").addClass("span_siatka_1");
+          $(".item_span2").addClass("span_siatka_2");
+          $(".item_span3").addClass("span_siatka_3");
+          $(".item_guzik").addClass("guzik_siatka");
+          $(".item_a").addClass("a_siatka");
+          $(".guzikwybor1").addClass("guzikwybor_wybrany");
+          $(".guzikwybor2").addClass("guzikwybor_zwykly");
+          $(".item").removeClass("uslugi_wynik_lista");
+          $(".item_img").removeClass("imgresp_lista");
+          $(".item_h6").removeClass("h6_lista");
+          $(".item_span1").removeClass("span_lista_1");
+          $(".item_span2").removeClass("span_lista_2");
+          $(".item_span3").removeClass("span_lista_3");
+          $(".item_guzik").removeClass("guzik_lista");
+          $(".item_a").removeClass("a_lista")
+          $(".guzikwybor1").removeClass("guzikwybor_zwykly");
+          $(".guzikwybor2").removeClass("guzikwybor_wybrany");
+
+          $(".item").removeClass("item_styl");
+          $(".item_img").removeClass("item_img_styl");
+          $(".item_h6").removeClass("item_h6_styl");
+          $(".item_span1").removeClass("item_span1_styl");
+          $(".item_span2").removeClass("item_span2_styl");
+          $(".item_span3").removeClass("item_span3_styl");
+          $(".item_guzik").removeClass("item_guzik_styl");
+          $(".item_a").removeClass("item_a_styl");
+          $(".guzikwybor2").removeClass("guzikwybor2_styl");
+          $(".guzikwybor1").removeClass("guzikwybor1_styl");
+
+          localStorage.setItem('item', 'uslugi_wynik_siatka')
+          localStorage.setItem('item_styl', 'item_styl')
+          localStorage.setItem('item_img', 'imgresp_siatka')
+          localStorage.setItem('item_img_styl', 'item_img_styl')
+          localStorage.setItem('item_h6', 'h6_siatka')
+          localStorage.setItem('item_h6_styl', 'item_h6_styl')
+          localStorage.setItem('item_span1', 'span_siatka_1')
+          localStorage.setItem('item_span1_styl', 'item_span1_styl')
+          localStorage.setItem('item_span2', 'span_siatka_2')
+          localStorage.setItem('item_span2_styl', 'item_span2_styl')
+          localStorage.setItem('item_span3', 'span_siatka_3')
+          localStorage.setItem('item_span3_styl', 'item_span3_styl')
+          localStorage.setItem('item_guzik', 'guzik_siatka')
+          localStorage.setItem('item_guzik_styl', 'item_guzik_styl')
+          localStorage.setItem('item_a', 'a_siatka')
+          localStorage.setItem('item_a_styl', 'item_a_styl')
+
+          localStorage.setItem('guzikwybor1', 'guzikwybor_wybrany')
+          localStorage.setItem('guzikwybor1_styl', 'guzikwybor1_styl')
+          localStorage.setItem('guzikwybor2', 'guzikwybor_zwykly')
+          localStorage.setItem('guzikwybor2_styl', 'guzikwybor2_styl')
+  })
+  let itemClass = localStorage.getItem('item')
+  $('.item').addClass(itemClass)
+  let item_stylClass = localStorage.getItem('item_styl')
+  $(".item").removeClass(item_stylClass)
+
+  let item_imgClass = localStorage.getItem('item_img')
+  $('.item_img').addClass(item_imgClass)
+  let item_img_stylClass = localStorage.getItem('item_img_styl')
+  $(".item_img").removeClass(item_img_stylClass);
+
+  let item_h6Class = localStorage.getItem('item_h6')
+  $('.item_h6').addClass(item_h6Class)
+  let item_h6_stylClass = localStorage.getItem('item_h6_styl')
+  $(".item_h6").removeClass(item_h6_stylClass);
+
+  let item_span1Class = localStorage.getItem('item_span1')
+  $('.item_span1').addClass(item_span1Class)
+  let item_span1_stylClass = localStorage.getItem('item_span1_styl')
+  $(".item_span1").removeClass(item_span1_stylClass);
+
+  let item_span2Class = localStorage.getItem('item_span2')
+  $('.item_span2').addClass(item_span2Class)
+  let item_span2_stylClass = localStorage.getItem('item_span2_styl')
+  $(".item_span2").removeClass(item_span2_stylClass);
+  
+  let item_span3Class = localStorage.getItem('item_span3')
+  $('.item_span3').addClass(item_span3Class)
+  let item_span3_stylClass = localStorage.getItem('item_span3_styl')
+  $(".item_span3").removeClass(item_span3_stylClass);
+
+  let item_guzikClass = localStorage.getItem('item_guzik')
+  $('.item_guzik').addClass(item_guzikClass)
+  let item_guzik_stylClass = localStorage.getItem('item_guzik_styl')
+  $(".item_guzik").removeClass(item_guzik_stylClass);
+
+  let item_aClass = localStorage.getItem('item_a')
+  $('.item_a').addClass(item_aClass)
+  let item_a_stylClass = localStorage.getItem('item_a_styl')
+  $(".item_a").removeClass(item_a_stylClass);
+
+  let item_guzikwybor1Class = localStorage.getItem('guzikwybor1')
+  $('.guzikwybor1').addClass(item_guzikwybor1Class)
+  let item_guzikwybor1stylClass = localStorage.getItem('guzikwybor1_styl')
+  $('.guzikwybor1').removeClass(item_guzikwybor1stylClass)
+  
+  let item_guzikwybor2Class = localStorage.getItem('guzikwybor2')
+  $('.guzikwybor2').addClass(item_guzikwybor2Class)
+  let item_guzikwybor2stylClass = localStorage.getItem('guzikwybor2_styl')
+  $('.guzikwybor2').removeClass(item_guzikwybor2stylClass)
+
+
+
+});
+</script>            </div>
+        </div>
+        <div class="stopka" id="stopka">
+            <div class="lewo">Krzysztof Janicki Grupa 2</div> 
+        </div>
+        <script>
+            var H = $('#banner').height() + $('#menu').height() + $('#stopka').height();
+            $("#tlo").css('min-height',"calc(100vh - " + H + "px )");
+            $("#tresc").css('min-height',"calc(100vh - " + H + "px )");
+            
+            
+            var T = $('#menu').height()
+            $(".sticky").css('top', T-1+ "px");
+            $(".uslugi_menu").css('top', T + "px");
+            $(".uslugi_widok").css('top', T + "px");
+            $(".politykaprywatnosci").css('top', T + "px");
+
+            jQuery(document).ready(function($) 
+            {
+	            $(function()
+                {
+	                $('a[href*="#"]:not([href="#"])').click(function()
+                        {
+		                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+                                {
+		                            var target = $(this.hash);
+		                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		                            
+                                    if (target.length)
+                                    {
+			                            $('html,body').animate(
+                                            {
+			                                    scrollTop: target.offset().top-($('#menu').height() +($('#menu').height()*0.20) + 70)
+			                                }, 1000);
+			                            return false;
+		                            }
+		                        }
+	                    });
+	            });
+            });
+            
+           
+
+    </script>
+    </body>
+
+</html>

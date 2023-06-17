@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <meta charset="utf-8">
+        <title>Przegrywarka.pl - Twoje studio digitalizacji</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <div class="banner" id="banner">
+            <img src="Obrazki/LogoStrony.png" width="50%" height="50%" alt="logo">
+          </div>
+        <div class="menu" id="menu">
+            <div class="lista">
+                <ul>
+                    <li><a href="index.html">STRONA GŁÓWNA</a></li>
+                    <li><a href="oferta.html">OFERTA</a></li>
+                    <li><a href="cennik.html">CENNIK</a></li>
+                    <li><a href="zamawianie.html">JAK ZAMAWIAĆ</a></li>
+                    <li class="li-aktywne"><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="tlo" id="tlo">
+            <div class="tresc" id="tresc">
+                <div class="kontaktlewo" id="kontaktlewo">
+                    <p class="pkontaktl">Przegrywarka.pl</p>
+                    <div class="tekst">
+                        <div class="svgobrazek">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#333" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg>
+                        </div>
+                    <!--<img src="Obrazki/pinezka.png" width="10%" height="10%">-->
+                        <div class="tekstobrazek">
+                            <a href="https://www.google.pl/maps/place/Plac+Jana+Paw%C5%82a+II+16,+95-100+Zgierz/@51.8563314,19.404726,19z/data=!4m5!3m4!1s0x471bb5d753f3950b:0xdb43483883260575!8m2!3d51.8563666!4d19.404685" target="_Blank">Zgierz, Plac Kilińskiego 1</a>
+                        </div>
+                    </div>
+                    <div class="tekst">
+                        <div class="svgobrazek">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#333" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                            </svg>
+                        </div>
+                    <!--<img src="Obrazki/koperta2.png" width="10%" height="10%">-->
+                        <div class="tekstobrazek">
+                            <a href="mailto:Test@Testowy.com">kontakt@przegrywarka.pl</a>
+                        </div>
+                    </div>
+                    &nbsp;
+                    <button class="rozwijanyInfo">Informacja</button>
+                    <div class="rozwijanytekstInfo">
+                        <p>&nbsp;Przegrywarka.pl działa jako niezarejestrowana działalność gospodarcza.&nbsp;&nbsp;Dzieje się tak, gdyż nośniki fizyczne są naszą pasją, a przychody z naszej działalności stanowią jedynie dodatek do wynagrodzenia z pracy na etacie.&nbsp;&nbsp;</p>
+                    </div>
+                </div>
+                <div class="kontaktprawo" id="kontaktprawo">
+                    <p class="pkontaktp">Napisz do nas!</p>
+                    <div class="formularz">
+                        <form action="" method="post">
+                            <input type="text" name="first_name" placeholder="Imię" id="imie" onchange="SprawdzImie()"required><input type="text" name="last_name" placeholder="Nazwisko" id="nazwisko" onchange="SprawdzNazwisko()" required >
+                            <input type="text" name="subject" placeholder="Temat" class="full-width" id="temat" onchange="SprawdzTemat()"required >
+                            <input type="text" name="email" placeholder="E-mail" class="full-width" id="email" onchange="SprawdzEmail()" required>
+                            <textarea rows="5" name="message" cols="50" placeholder="Twoja Wiadomość" class="full-width" id="wiadomosc" onchange="SprawdzWiadomosc()" required></textarea>
+                            <span class="full-width">
+                                <span class="wider small-width">
+                                    <input type="submit" name="submit" value="Wyślij" class="wider zatwierdz">
+                                </span>
+                            </span>
+                        </form>
+                    &nbsp;
+                        <span class="wynik" id="Wyniki">
+                        </span>
+                    </div>
+                </div>
+                <script>
+                function SprawdzImie()
+                {
+                        Imie=document.getElementById("imie").value;
+                        Warunek1 = /^[A-ZĆŁŚŻŹ][a-ząćęłńóśżź]{2,20}$/.test(Imie);
+                        if(Warunek1==true)
+                        {
+                            document.getElementById('imie').style.borderColor = "green";
+                            document.getElementById('imie').style.color = "green";
+                        }
+                        else if(Warunek1!=true && Imie!="")
+                        {
+                            document.getElementById('imie').style.borderColor = "red";
+                            document.getElementById('imie').style.color = "red";
+                            alert("Wpisz poprawne imię.");
+                        }
+                        else if(Imie=="")
+                        {
+                            document.getElementById('imie').style.borderColor = "gray";
+                            document.getElementById('imie').style.color = "gray";
+                            alert('Pole "Imię" jest obowiązkowe.');
+                
+                        }
+                        
+                }  
+                function SprawdzNazwisko()
+                {
+                        Nazwisko=document.getElementById("nazwisko").value;
+                        Warunek2 = /^[A-ZĆŁŚŻŹ][a-ząćęłńóśżź]{2,30}$/.test(Nazwisko);
+                        if(Warunek2==true)
+                        {
+                            document.getElementById('nazwisko').style.borderColor = "green";
+                            document.getElementById('nazwisko').style.color = "green";
+                        }
+                        else if(Warunek2!=true && Nazwisko!="")
+                        {
+                            document.getElementById('nazwisko').style.borderColor = "red";
+                            document.getElementById('nazwisko').style.color = "red";
+                            alert("Wpisz poprawne nazwisko.");
+                        }
+                        else if(Nazwisko=="")
+                        {
+                            document.getElementById('nazwisko').style.borderColor = "gray";
+                            document.getElementById('nazwisko').style.color = "gray";
+                            alert('Pole "Nazwisko" jest obowiązkowe.');
+                        }
+                }        
+                function SprawdzEmail()
+                {
+                        Email=document.getElementById("email").value;
+                        Warunek3 = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(Email);
+                        if(Warunek3==true)
+                        {
+                            document.getElementById('email').style.borderColor = "green";
+                            document.getElementById('email').style.color = "green";
+                        }
+                        else if(Warunek3!=true && Email!="")
+                        {
+                            document.getElementById('email').style.borderColor = "red";
+                            document.getElementById('email').style.color = "red";
+                            alert("Wpisz poprawny adres E-Mail.");
+                        }
+                        else if(Email=="")
+                        {
+                            document.getElementById('email').style.borderColor = "gray";
+                            document.getElementById('email').style.color = "gray";
+                            alert('Pole "E-Mail" jest obowiązkowe.');
+                        }
+                }
+                function SprawdzTemat()
+                { 
+                        Temat=document.getElementById("temat").value;
+                        
+                        if( Temat.length >20 && Temat.length <150)
+                        {
+                            document.getElementById('temat').style.borderColor = "green";
+                            document.getElementById('temat').style.color = "green";
+                        }
+                        else if(Temat=="")
+                        {
+                            document.getElementById('temat').style.borderColor = "gray";
+                            document.getElementById('temat').style.color = "gray";
+                            alert('Pole "Temat" jest obowiązkowe.');
+                        }
+                        else
+                        {
+                            document.getElementById('temat').style.borderColor = "red";
+                            document.getElementById('temat').style.color = "red";
+                           alert('Pole "Temat" musi zawierać pomiędzy 20 a 150 znaków.');
+                        }
+                }
+                function SprawdzWiadomosc()
+                {
+                        Wiadomosc=document.getElementById("wiadomosc").value;
+                        if( Wiadomosc.length >100 && Wiadomosc.length <1000)
+                        {
+                            document.getElementById('wiadomosc').style.borderColor = "green";
+                            document.getElementById('wiadomosc').style.color = "green";
+                        }
+                        else if(Wiadomosc=="")
+                        {
+                            document.getElementById('wiadomosc').style.borderColor = "gray";
+                            document.getElementById('wiadomosc').style.color = "gray";
+                            alert('Pole "Wiadomość" jest obowiązkowe.');
+                        }
+                        else
+                        {
+                            document.getElementById('wiadomosc').style.borderColor = "red";
+                            document.getElementById('wiadomosc').style.color = "red";
+                           alert('Pole "Wiadomosc" musi zawierać pomiędzy 100 a 1000 znaków.');
+                        }
+                }
+                function SprawdzSpam()
+                {
+                        Spam=document.getElementById("spam").value;
+                        
+                        if( Spam == Sumakontrolna)
+                        {
+                            document.getElementById('spam').style.borderColor = "green";
+                            document.getElementById('spam').style.color = "green";
+                        }
+                        else if(Spam=="")
+                        {
+                            document.getElementById('spam').style.borderColor = "black";
+                            document.getElementById('spam').style.color = "black";
+                            alert('Pole "Anty-Spam" jest obowiązkowe.');
+                        }
+                        else
+                        {
+                            document.getElementById('spam').style.borderColor = "red";
+                            document.getElementById('spam').style.color = "red";
+                           alert('Rozwiąż równianie');
+                        }
+                }
+                </script>
+                <script>
+                var rozw = document.getElementsByClassName("rozwijanyInfo");
+                var i;
+                
+                for (i = 0; i < rozw.length; i++) {
+                  rozw[i].addEventListener("click", function() {
+                    this.classList.toggle("rozwactiveInfo");
+                    var rozwijanytekstInfo = this.nextElementSibling;
+                    if (rozwijanytekstInfo.style.maxHeight){
+                      rozwijanytekstInfo.style.maxHeight = null;
+                    } else {
+                      rozwijanytekstInfo.style.maxHeight = rozwijanytekstInfo.scrollHeight + "px";
+                    } 
+                  });
+                }
+                </script>
+            </div>
+        </div>
+        <div class="stopka" id="stopka">
+            <span class="lewo">Krzysztof Janicki Grupa 2</span> 
+        </div>
+        <script>
+            var H = $('#banner').height() + $('#menu').height() + $('#stopka').height();
+            $("#tlo").css('min-height',"calc(100vh - " + H + "px )");
+            $("#tresc").css('min-height',"calc(100vh - " + H + "px )");
+            
+            var T = $('#menu').height()
+            $(".sticky").css('top', T-1+ "px");
+            $(".uslugi_menu").css('top', T + "px");
+            $(".uslugi_widok").css('top', T + "px");
+            $(".politykaprywatnosci").css('top', T + "px");
+
+            jQuery(document).ready(function($) 
+            {
+	            $(function()
+                {
+	                $('a[href*="#"]:not([href="#"])').click(function()
+                        {
+		                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+                                {
+		                            var target = $(this.hash);
+		                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		                            
+                                    if (target.length)
+                                    {
+			                            $('html,body').animate(
+                                            {
+			                                    scrollTop: target.offset().top-($('#menu').height() +($('#menu').height()*0.20) + 70)
+			                                }, 1000);
+			                            return false;
+		                            }
+		                        }
+	                    });
+	            });
+            });
+    </script>
+    </body>
+</html>

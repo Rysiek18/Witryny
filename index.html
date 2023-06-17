@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <meta charset="utf-8">
+        <title>Przegrywarka.pl - Twoje studio digitalizacji</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+        <div class="banner" id="banner">
+            <img src="Obrazki/LogoStrony.png" width="50%" height="50%" alt="logo">
+        </div>
+        <div class="menu" id="menu">
+            <div class="lista">
+                <ul>
+                    <li class="li-aktywne"><a href="index.html">STRONA GŁÓWNA</a></li>
+                    <li><a href="oferta.html">OFERTA</a></li>
+                    <li><a href="cennik.html">CENNIK</a></li>
+                    <li><a href="zamawianie.html">JAK ZAMAWIAĆ</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="tlo" id="tlo">
+            <div class="tresc" id="tresc">
+                <div style="display: flex;flex-direction: column;">
+                <!-- 
+                    <div style="padding: 1%;font-size: 150%;text-align: center;font-weight: bold;">
+                        <p>Przegrywarka.pl - Digitalizacja materiałów w najwyższej możliwej jakości!</p>
+                    </div>
+                -->
+
+
+                    <div style="display: flex;font-size: 150%;font-weight: bold;padding: 0 1% 0 1%">
+                        <div style="width: 70%;">
+                            Poznaj nasz sprzęt
+                        </div>
+                        <div class="wideonly" style="width: 30%;">
+                            Popularne usługi
+                        </div>
+                    </div>
+                    <div class="welcome" style="display: flex;padding: 1%;">
+                        <div class="welcomelewo" style="display: flex;flex-direction:column;">
+                            <div class="galeria">
+                                <div class="images-slideshow">
+                                    <div class="imageSlides fade">
+                                        <img src="1.jpg" alt="sprzet">
+                                    </div>
+        
+                                    <div class="imageSlides fade">
+                                        <img src="2.jpg" alt="sprzet">
+                                    </div>
+        
+                                    <div class="imageSlides fade">
+                                        <img src="3.jpg" alt="sprzet">
+                                    </div>
+        
+                                    <a class="slider-btn previous" onclick="setSlides(-1)">❮</a>
+                                    <a class="slider-btn next" onclick="setSlides(1)">❯</a>
+                            
+                                </div>
+                                <div class="galeriatext">
+                                    <div class="textSlides">
+                                        Korzystamy z magnetowidów z najwyższej półki w segmencie konsumenckim. Nasze magnetowidy wyróżniają się wysoką jakością odczytu taśmy, a także wbudowanym korektorem podstawy czasu, dzięki czemu możemy uratować wiele niestabilnych nagrań.
+                                    </div>
+                                    <div class="textSlides">
+                                        Nasze kamery miniDV mają wiele zastosowań. Wszystkie doskonale się sprawdzą do archiwizacji danych zapisanych na małych taśmach cyfrowych, a niektóre z nich służą nam jako konwertery analogowo-cyfrowe do digitalizowania taśm VHS. 
+                                    </div>
+                                    <div class="textSlides">
+                                        Do cyfryzacji taśm audio używamy magnetofonu obsługującego wszystkie rodzaje taśm oraz techonologie redukcji szumu Dolby (B/C/S). Wysokiej klasy nagrywarka DVD służy do kopiowania materiałów cyfrowych, a także do digitalizowania taśm VHS. 
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="welcomeprawo" style="height: 100%;">
+                            <div class="smallonly">
+                                Popularne usługi
+                                <br>
+                            </div>
+                            <div class="popularne">
+                                <div class='uslugi_wynik'   style="height: 100%;">
+                                    <a href='http://stackoverflow.com' style='display:flex;flex-direction: column;	text-decoration:none;width:100%; height: 100%; color:black;'>
+                                        <div style='height: 90%;padding-bottom: 2%'>
+                                            
+                                            <img class='imgresp' src='Media/Zdjęcia/vhs.png' alt="oferta">
+                                            <h6>Przegranie kasety VHS, VHS-C, SVHS, SVHS-C, miniDV do pliku video (AVI, MP4, MPEG)</h6>
+            
+                                        </div>
+                                        
+                                        <div style='display: flex;justify-content:center;height: 10%;vertical-align: bottom;'>
+                                            
+                                            <pre>Cena już od: </pre>
+                                                <div style='display: block;font-weight: bold;'> 
+                                                    30zł
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class='uslugi_wynik bottom'  style="height: 100%;">
+                                    <a href='http://stackoverflow.com' style='display:flex;flex-direction: column;	text-decoration:none;width:100%; height: 100%; color:black;'>
+                                        <div style='height: 90%;padding-bottom: 2%'>
+                                            
+                                            <img class='imgresp' src='Media/Zdjęcia/kaseta.png' alt="oferta">
+                                            <h6>Przegranie kasety magnetofonowej na płytę CD lub do pliku audio (MP3, FLAC, WAV)</h6>
+            
+                                        </div>
+                                        
+                                        <div style='display: flex;justify-content:center;height: 10%;vertical-align: bottom;'>
+                                            
+                                            <pre>Cena już od: </pre>
+                                                <div style='display: block;font-weight: bold;'> 
+                                                    25zł
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display:grid;grid-template-columns: 1fr 1fr;text-align:justify;gap: 5%;margin-left: 2%;margin-right: 2%;">
+                    <div style="font-size:115%;">
+                        <p style="font-weight:bold;font-size: 125%;text-align: center;">Po co digitalalizować swoje nośniki</p>
+                        <br>
+                        <p>Anna Jantar śpiewała: <i>"Nic nie może przecież wiecznie trwać"</i>. Dotyczy to wszystkiego, w szczególności analogowych nośników danych.</p>
+                        <br>
+                        <p>Nie czekaj aż będzie za późno, a twoje wspomnienia zapisane m.in na taśmach video ulegną bezpowrotnemu zniszczeniu. Wybierz mądrze i skorzystaj z profesjonalnych usług studia Przegrywarka.pl</p>
+                    </div>
+                    <div style="font-size:115%;">
+                        <p style="font-weight:bold;font-size: 125%;text-align: center;">Zalety przegrywania danych</p>
+                        <br>
+                        <ul style="padding-left: 15px;padding-right: 15px">
+                            <li>Nośniki cyfrowe są o wiele trwalsze i mogą wytrzymać nawet setki lat!</li>
+                            <li>Dane przekonwertowane do postaci cyfrowej można poddać procesowi poprawy jakości obrazu i dźwięku </li>
+                            <li>Dane zapisane metodą cyfrową nigdy nie tracą na jakości.</li>
+                            <li>Możliwość odtwarzania na domowym komputerze czy nowoczesnym sprzęcie audio-video.</li>
+                            <li>Proste dzielenie się i przenoszenie plików cyfrowych.</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="porownanie" style="display:flex;width:100%;background-color: #E8E8E8;align-items: center">
+                        <div class="dlaczegomy">
+                            <p style="font-weight:bold;font-size: 125%;text-align: center;">Dlaczego my?</p>
+                            <br>
+                            <p>Taśmy video digitalizujemy przy użyciu profesjonalnego konwertera Canopus 110, który zapewnia najwyższą możliwą jakość obrazu i dźwięku</p>
+                            <br>
+                            <p>Nasze studio oferuje cyfrowy remastering audio-video, obiektywnie polepszający jakość materiału źródłowego</p>
+                            <br>
+                            <p>Do każdego klienta podchodzimy indywidualnie i nie boimy się nowych wyzwań od wymagających zleceniodawców.</p>
+                            <br>
+                            <p>Gwarancja pełnej poufności i bezpieczeństwa danych podczas całego procesu przegrywania.</p>
+
+                        </div>
+                        <div class="dlaczegomyvideo">
+                        <video autoplay muted controls loop>
+                            <source src="Media/Filmy/Porownanie.mp4" type="video/mp4">
+                            Twoja przeglądarka nie wspiera odtwarzania plików wideo.
+                        </video>
+                        </div>
+
+                    </div>
+                    <br>
+                    <hr style="width:80%;margin-left:10%">
+                    <br>
+                    <p style="text-align:center;font-size:x-large;font-weight:bold">Zobacz także</p>
+                    <br>
+                    <hr style="width:80%;margin-left:10%">
+                    <div class='produkty2'><div class='uslugi_wynik' >
+                        <a href='http://stackoverflow.com' style='display:flex;flex-direction: column;	text-decoration:none;width:100%; height: 100%; color:black;'>
+                                    <div style='height: 90%;padding-bottom: 2%'>
+                                        
+                                        <img class='imgresp' src='Media/Zdjęcia/kaseta.png' alt="oferta">
+                                        <h6>Nagranie dostarczonego materiału na kasetę magnetofonową</h6>
+        
+                                    </div>
+                                   
+                                    <div style='display: flex;justify-content:center;height: 10%;vertical-align: bottom;'>
+                                        
+                                        <pre>Cena już od: </pre>
+                                            <div style='display: block;font-weight: bold;'> 
+                                                20zł
+                                            </div>
+                                    </div>
+                                    </a>
+                        </div><div class='uslugi_wynik' >
+                        <a href='http://stackoverflow.com' style='display:flex;flex-direction: column;	text-decoration:none;width:100%; height: 100%; color:black;'>
+                                    <div style='height: 90%;padding-bottom: 2%'>
+                                        
+                                        <img class='imgresp' src='Media/Zdjęcia/winyl.png' alt="oferta">
+                                        <h6>Duplikacja płyty winylowej na kasetę magnetofonową</h6>
+        
+                                    </div>
+                                   
+                                    <div style='display: flex;justify-content:center;height: 10%;vertical-align: bottom;'>
+                                        
+                                        <pre>Cena już od: </pre>
+                                            <div style='display: block;font-weight: bold;'> 
+                                                20zł
+                                            </div>
+                                    </div>
+                                    </a>
+                        </div><div class='uslugi_wynik ostatni' >
+                        <a href='http://stackoverflow.com' style='display:flex;flex-direction: column;	text-decoration:none;width:100%; height: 100%; color:black;'>
+                                    <div style='height: 90%;padding-bottom: 2%'>
+                                        
+                                        <img class='imgresp' src='Media/Zdjęcia/vhs.png' alt="oferta">
+                                        <h6>Przegranie kasety video do pliku video (AVI, MP4, MPEG) na dysk klienta</h6>
+        
+                                    </div>
+                                   
+                                    <div style='display: flex;justify-content:center;height: 10%;vertical-align: bottom;'>
+                                        
+                                        <pre>Cena już od: </pre>
+                                            <div style='display: block;font-weight: bold;'> 
+                                                30zł
+                                            </div>
+                                    </div>
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stopka" id="stopka">
+            <div class="lewo">Krzysztof Janicki Grupa 2</div> 
+        </div>
+        <script>
+            var H = $('#banner').height() + $('#menu').height() + $('#stopka').height();
+            $("#tlo").css('min-height',"calc(100vh - " + H + "px )");
+            $("#tresc").css('min-height',"calc(100vh - " + H + "px )");
+            
+            
+            var T = $('#menu').height()
+            $(".sticky").css('top', T-1+ "px");
+            $(".uslugi_menu").css('top', T + "px");
+            $(".uslugi_widok").css('top', T + "px");
+            $(".politykaprywatnosci").css('top', T + "px");
+
+            jQuery(document).ready(function($) 
+            {
+	            $(function()
+                {
+	                $('a[href*="#"]:not([href="#"])').click(function()
+                        {
+		                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+                                {
+		                            var target = $(this.hash);
+		                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		                            
+                                    if (target.length)
+                                    {
+			                            $('html,body').animate(
+                                            {
+			                                    scrollTop: target.offset().top-($('#menu').height() +($('#menu').height()*0.20) + 70)
+			                                }, 1000);
+			                            return false;
+		                            }
+		                        }
+	                    });
+	            });
+            });
+            
+            var currentIndex = 1;
+            displaySlides(currentIndex);
+
+            function setSlides(num) {
+                displaySlides(currentIndex += num);
+            }
+
+            function displaySlides(num) {
+                var x;
+                var slides = document.getElementsByClassName("imageSlides");
+                var text = document.getElementsByClassName("textSlides");
+
+                if (num > slides.length) { currentIndex = 1 }
+                if (num < 1) { currentIndex = slides.length }
+                for (x = 0; x < slides.length; x++) {
+                    slides[x].style.display = "none";
+                    text[x].style.display = "none";
+                }
+                slides[currentIndex - 1].style.display = "block";
+                text[currentIndex - 1].style.display = "block";
+}
+    </script>
+    </body>
+
+</html>

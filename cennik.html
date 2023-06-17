@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Przegrywarka.pl - Twoje studio digitalizacji</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+      <div class="banner" id="banner">
+        <img src="Obrazki/LogoStrony.png" width="50%" height="50%">
+      </div>
+        <div class="menu" id="menu">
+            <div class="lista">
+                <ul>
+                    <li><a href="index.html">STRONA GŁÓWNA</a></li>
+                    <li><a href="oferta.html">OFERTA</a></li>
+                    <li class="li-aktywne"><a href="cennik.html">CENNIK</a></li>
+                    <li><a href="zamawianie.html">JAK ZAMAWIAĆ</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="tlo" id="tlo">
+            <div class="tresc" id="tresc">
+                <div>
+                    <div class="trescCennik">
+                    <button class="rozwijanyCennik">Porównanie ofert i definicje</button>
+                      <div class="rozwijanytekstCennik" style="max-height: 100%">
+                        <p>
+                          &nbsp;
+                          <p class="znacznikcennika" id="uslugi_video">Usługi video</p>
+                          &nbsp;
+                          <table>
+                            <tr class="sticky">
+                              <th class='cena5' id='cena5'>Porównanie usług</th>
+                              <th class='cena5' id='cena5'>Usługa Standard</th>
+                              <th class='cena5' id='cena5'>Usługa Rozszerzona</th>
+                              <th class='cena5' id='cena5'>Usługa Premium</th>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>Rodzaj opakowania płyty</th>
+                              <td class='cena4'>Koperta papierowa</td>
+                              <td class='cena4'>Slim Case</td>
+                              <td class='cena4'>Slim Case</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>Usługa wykonywana na najwyższej jakości sprzęcie</th>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>Logo firmy przed nagraniem</th>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4'>Na życzenie klienta</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'><a href='#slowniczek'>Usunięcie przeplotu</a></th>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>
+                                <a href='#slowniczek'>
+                                <span class="tooltip">Usunięcie linii overscan
+                                  <span class="tooltiptext">Tylko w przypadku przegrywania w jakości HD</span>
+                                </span>
+                                </a>
+                              </th>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>
+                                <a href='#slowniczek'>
+                                <span class="tooltip">Rozdzielczość przegrywania SD
+                                  <span class="tooltiptext">Tylko w przypadku przegrywania w jakości SD</span>
+                                </span>
+                                </a>
+                              </th>
+                              <td class='cena4'>480p / 576p</td>
+                              <td class='cena4'>480p / 576p</td>
+                              <td class='cena4'>480p / 576p</td>
+                            </tr> 
+                            <tr>
+                              <th class='usluga2'>
+                                <a href='#slowniczek'>
+                                <span class="tooltip">Rozdzielczość przegrywania HD
+                                  <span class="tooltiptext">Tylko w przypadku przegrywania w jakości HD</span>
+                                </span>
+                                </a>
+                              </th>
+                              <td class='cena4'>720p</td>
+                              <td class='cena4'>720p</td>
+                              <td class='cena4'>1080p</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>
+                                <a href='#slowniczek'>
+                                <span class="tooltip">Maksymalna liczba klatek na sekundę
+                                  <span class="tooltiptext">Ostateczna ilość zależy od materiału źródłowego</span>
+                                </span>
+                                </a>
+                              </th>
+                              <td class='cena4'>25 / 30 kl/s</td>
+                              <td class='cena4'>50 / 60 kl/s</td>
+                              <td class='cena4'>50 / 60 kl/s</td>
+                            </tr> 
+                            <tr>
+                              <th class='usluga2'>Usunięcie mrówek na początku i końcu nagrania</th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>
+                              <a href='#slowniczek'>
+                                <span class="tooltip">Zastosowanie TBC
+                                  <span class="tooltiptext">Tylko w przypadku, gdy jest to wymagane</span>
+                                </span>
+                              </a>
+                              </th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'><a href='#slowniczek'>Trójwymiarowa cyfrowa redukcja szumów (3D DNR)</a></th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>
+                                <span class="tooltip">Utworzenie rozdziałów
+                                  <span class="tooltiptext">Tylko w przypadku przegrania na płytę DVD</span>
+                                </span>
+                              </th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4'>Usługa Premium nie jest dostępna na płytach DVD ze względu na ograniczenia technologiczne</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>Korekcja kolorów</th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>Korekcja kontrastu</th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>Korekcja dźwięku</th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                          </table>
+                          &nbsp;
+                          &nbsp;
+                          <p class="znacznikcennika" id="uslugi_audio">Usługi audio</p>
+                          &nbsp;
+                          <table>
+                            <tr class="sticky">
+                              <th class='cena5'>Porównanie usług</th>
+                              <th class='cena5' id='cena5'>Usługa Standard</th>
+                              <th class='cena5' id='cena5'>Usługa Rozszerzona</th>
+                              <th class='cena5' id='cena5'>Usługa Premium</th>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>Rodzaj opakowania płyty</th>
+                              <td class='cena4'>Koperta papierowa</td>
+                              <td class='cena4'>Koperta papierowa</td>
+                              <td class='cena4'>Slim Case</td></tr>
+                            <tr>
+                              <th class='usluga2'>Usługa wykonywana na najwyższej jakości sprzęcie</th>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'>Podział nagrania na ścieżki</th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                                <th class='usluga2'>Usunięcie przerw między utworami</th>
+                                <td class='cena4, czerwony'>🗙</td>
+                                <td class='cena4, zielony'>✔</td>
+                                <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'><a href='#slowniczek'>
+                                <span class="tooltip">Zastosowanie redukcji szumów DOLBY NR
+                                  <span class="tooltiptext">Tylko w przypadku kaset magnetofonowych nagranych przy użyciu tej technologii</span>
+                                </span>
+                                </a>
+                              </th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                            <tr>
+                              <th class='usluga2'><a href='#slowniczek'>Dodanie informacji o utworach (Metadane)</a></th>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, czerwony'>🗙</td>
+                              <td class='cena4, zielony'>✔</td>
+                            </tr>
+                          </table>
+                          &nbsp;
+                          &nbsp;
+                          <p class="znacznikcennika" id="slowniczek">Słowniczek technologiczny</p>
+                          &nbsp;
+                          <table>
+                            <tr>
+                              <th class='cena4'>Pojęcie</th>
+                              <th class='definicja2'>Definicja</th>
+                            </tr>
+                            <tr>
+                              <th class='pojecie'>TBC</th>
+                              <td class='definicja'>Time base correction (Korekcja podstawy czasu) to technika redukcji lub wyeliminowania błędów spowodowanych niestabilnością mechaniczną występującą w nagraniach analogowych na taśmach video.
+                              Zwiększa stabilność i czytelność obrazu uszkodzonych taśm. <a href="Media/Filmy/TBC-Przyklad.mp4" target="_Blank">Przykład</a></td>
+                            </tr>
+                            <tr>
+                              <th class='pojecie'>Dolby Noise Reduction</th>
+                              <td class='definicja'>System redukcji szumów stosowany w magnetofonach analogowych, opracowany przez firmę Dolby Laboratories. Zadaniem systemu Dolby NR jest zmniejszenie poziomu szumów samej taśmy, które są głównym czynnikiem ograniczającym dynamikę magnetofonów kasetowych.</td>
+                            </tr>
+                            <tr>
+                              <th class='pojecie'>3D DNR</th>
+                              <td class='definicja'>Trójwymiarowa cyfrowa redukcja szumów obecna w magnetowidach Panasonic z najwyższej półki. Powoduje widoczne zmniejszenie artefaktów występujących w taśmach VHS oraz S-VHS</td>
+                            </tr>
+                            <tr>
+                              <th class='pojecie'>Metadane</th>
+                              <td class='definicja'>Informacje o utworach umieszczone wewnątrz plików audio. Pozwalają one na dołączenie do piosenki informacji o tytule, numerze utworu na płycie, gatunku muzyki, a nawet pozwalają umieścić okładkę albumu.
+                                &nbsp;&nbsp;Informacje te są zwykle wyświetlane w odtwarzaczu podczas trwania muzyki – o ile używane przez nas oprogramowanie lub sprzęt obsługują odpowiedni standard. Takie informacje są szczególnie przydatne podczas odtwarzania na komputerze.</td>
+                            </tr>
+                            <tr>
+                              <th class='pojecie'>Przeplot</th>
+                              <td class='definicja'>Technika pozwalająca na podwojenie liczby klatek na sekundę bez zwiększania szerokości pasma. Charakteryzuje się tym, że podczas ruchu na ekranie, obraz staje się poszatkowany i niewyraźny. <a href="Media/Zdjęcia/Przeplot.jpg" target="_Blank">Przykład</a></td>
+                            </tr>
+                            <tr>
+                              <th class='pojecie'>Przegrywanie SD</th>
+                              <td class='definicja'>Definicja</td>
+                            </tr>
+                            <tr>
+                              <th class='pojecie'>Przegrywanie HD</th>
+                              <td class='definicja'>Definicja</td>
+                            </tr>  
+                          </table>
+                          &nbsp; 
+                        </p>
+                      </div>
+                      <button class="rozwijanyCennik">Usługi video</button>
+                      <div class="rozwijanytekstCennik" style="max-height: 100%">
+                        <p>
+                          &nbsp;
+                          <p class="znacznikcennika">Przegrywanie w jakości SD</p>
+                          &nbsp;
+                          <table>
+                              <tr><th class='usluga' rowspan='2'>Usługa</th><th class='cenauwaga' colspan='2'><span class='tooltip'>Cena za każdą rozpoczętą godzinę
+                              <span class='tooltiptext'>Liczone osobno dla każdej kasety</span></th></tr>
+                              <tr><th class='cena2'><a href='#uslugi_video'>Usługa Standard</a></th><th class='cena2'><a href='#uslugi_video'>Usługa Rozszerzona</a></th></tr><tr><td>Przegranie kasety VHS, VHS-C, SVHS, SVHS-C, miniDV na płytę DVD lub do pliku video (AVI, MP4, MPEG)</td><td class='cena2'>20zł</td><td class='cena2'>30zł</td></tr><tr><td>Przegranie kasety VHS, VHS-C, SVHS, SVHS-C, miniDV do pliku video (AVI, MP4, MPEG) na dysk klienta</td><td class='cena2'>25zł</td><td class='cena2'>35zł</td></tr></table>      &nbsp;
+                          &nbsp;
+                          <p class="znacznikcennika">Przegrywanie w jakości HD</p>
+                          &nbsp;
+                          <table>
+                              <tr><th class='usluga' rowspan='2'>Usługa</th><th class='cenauwaga' colspan='3'><span class='tooltip'>Cena za każdą rozpoczętą godzinę
+                              <span class='tooltiptext'>Liczone osobno dla każdej kasety</span></th></tr>
+                              <tr><th class='cena3'><a href='#uslugi_video'>Usługa Standard</a></th><th class='cena3'><a href='#uslugi_video'>Usługa Rozszerzona</a></th><th class='cena3'><a href='#uslugi_video'>Usługa Premium</a></th></tr><tr><td>Przegranie kasety VHS, VHS-C, SVHS, SVHS-C, miniDV do pliku video (AVI, MP4, MPEG)</td><td class='cena3'>30zł</td><td class='cena3'>40zł</td><td class='cena3'>50zł</td></tr><tr><td>Przegranie kasety VHS, VHS-C, SVHS, SVHS-C, miniDV do pliku video (AVI, MP4, MPEG) na dysk klienta</td><td class='cena3'>35zł</td><td class='cena3'>45zł</td><td class='cena3'>55zł</td></tr></table>      &nbsp;
+                          &nbsp;
+                          <p class="znacznikcennika">Duplikacja nagrań</p>
+                          &nbsp;
+                          <table>
+                              <tr><th class='usluga'>Usługa</th><th class='cenauwaga'><span class='tooltip'>Cena za każdą rozpoczętą godzinę
+                              <span class='tooltiptext'>Liczone osobno dla każdego nośnika</span></th></tr><tr><td>Duplikacja płyty DVD (Kopia na płytę DVD)</td><td class='cena'>20zł + Koszt płyty</td></tr><tr><td>Duplikacja płyty DVD na kasetę VHS/SVHS</td><td class='cena'>25zł + Koszt kasety</td></tr></table>      &nbsp;
+                          &nbsp;
+                          <p class="znacznikcennika">Nagrywanie</p>
+                          &nbsp;
+                          <table>
+                            <tr><th class='usluga'>Usługa</th><th class='cena'>Cena za każdą rozpoczętą godzinę</th></tr><tr><td>Nagranie dostarczonego materiału na płytę DVD</td><td class='cena'>25zł + Koszt płyty</td></tr><tr><td>Nagranie dostarczonego materiału na kasetę VHS/SVHS</td><td class='cena'>30zł + Koszt kasety</td></tr></table>      &nbsp;
+                          &nbsp;
+                          <p class="znacznikcennika">Inne</p>
+                          &nbsp;
+                          <table>
+                            <tr><th class='usluga'>Usługa</th><th class='cena'>Cena za każde rozpoczęte 5GB / 7dni</th></tr><tr><td>Udostępnienie przegranych plików do pobrania z Internetu</td><td class='cena'>10zł</td></tr></table>      &nbsp;
+                          &nbsp;
+                        </p>
+                      </div>
+                      <button class="rozwijanyCennik" >Usługi audio</button>
+                      <div class="rozwijanytekstCennik" style="max-height: 100%">
+                        <p>
+                          &nbsp;
+                          <p class="znacznikcennika">Przegrywanie nagrań</p>
+                          &nbsp;
+                          <table>
+                              <tr><th class='usluga' rowspan='2'>Usługa</th><th class='cena2' colspan='3'>Cena za każdą rozpoczętą godzinę</th></tr>
+                              <tr><th class='cena3'><a href='#uslugi_audio'>Usługa Standard</a></th><th class='cena3'><a href='#uslugi_audio'>Usługa Rozszerzona</a></th><th class='cena3'><a href='#uslugi_audio'>Usługa Premium</a></th></tr><tr><td>Przegranie płyty winylowej na płytę CD lub do pliku audio (MP3, FLAC, WAV)</td><td class='cena3'>30zł</td><td class='cena3'>40zł</td><td class='cena3'>50zł</td></tr><tr><td>Przegranie płyty winylowej do pliku audio (MP3, FLAC, WAV) na dysk klienta</td><td class='cena3'>35zł</td><td class='cena3'>45zł</td><td class='cena3'>55zł</td></tr><tr><td>Przegranie kasety magnetofonowej na płytę CD lub do pliku audio (MP3, FLAC, WAV)</td><td class='cena3'>25zł</td><td class='cena3'>35zł</td><td class='cena3'>45zł</td></tr><tr><td>Przegranie kasety magnetofonowej do pliku audio (MP3, FLAC, WAV) na dysk klienta</td><td class='cena3'>30zł</td><td class='cena3'>40zł</td><td class='cena3'>50zł</td></tr></table>      &nbsp;
+                          &nbsp;
+                          <p class="znacznikcennika">Duplikacja nagrań</p>
+                          &nbsp;
+                          <table>
+                              <tr><th class='usluga'>Usługa</th><th class='cena'>Cena za każdą rozpoczętą godzinę</th></tr><tr><td>Duplikacja płyty CD na kasetę magnetofonową</td><td class='cena'>25zł + Koszt kasety</td></tr><tr><td>Duplikacja płyty winylowej na kasetę magnetofonową</td><td class='cena'>25zł + Koszt kasety</td></tr></table>      &nbsp;
+                          &nbsp;
+                          <p class="znacznikcennika">Nagrywanie</p>
+                          &nbsp;
+                          <table>
+                              <tr><th class='usluga'>Usługa</th><th class='cena'>Cena za każdą rozpoczętą godzinę</th></tr><tr><td>Nagranie dostarczonego materiału na płytę CD</td><td class='cena'>20zł + Koszt płyty</td></tr><tr><td>Nagranie dostarczonego materiału na kasetę magnetofonową</td><td class='cena'>25zł + Koszt kasety</td></tr></table>      &nbsp;
+                          &nbsp;
+                          <p class="znacznikcennika">Inne</p>
+                          &nbsp;
+                          <table>
+                            <tr><th class='usluga'>Usługa</th><th class='cena'>Cena za każde rozpoczęte 5GB / 7dni</th></tr><tr><td>Udostępnienie przegranych plików do pobrania z Internetu</td><td class='cena'>10zł</td></tr></table>      &nbsp;
+                          &nbsp;
+                        </p>
+                      </div>
+                      &nbsp;
+                      <p style='margin:2%;color: #444; text-align: center'>To nie jest oferta. Podane ceny nie stanowią oferty handlowej w rozumieniu art. 66 kodeksu cywilnego. Ostateczna cena zostanie podana po dostarczeniu i zweryfikowaniu zadeklarowanego nośnika i będzie uzależniona od wybranych usług.</p>
+                    </div>
+                    </div>
+          </div>
+                            </div>
+
+        <div class="stopka" id="stopka">
+            <span class="lewo">Krzysztof Janicki Grupa 2</span> 
+        </div>
+    </body>
+    <script>
+            var H = $('#banner').height() + $('#menu').height() + $('#stopka').height();
+            $("#tlo").css('min-height',"calc(100vh - " + H + "px )");
+            $("#tresc").css('min-height',"calc(100vh - " + H + "px )");
+            
+            var T = $('#menu').height()
+            $(".sticky").css('top', T-1+ "px");
+            $(".uslugi_menu").css('top', T + "px");
+            $(".uslugi_widok").css('top', T + "px");
+            $(".politykaprywatnosci").css('top', T + "px");
+
+            var rozw = document.getElementsByClassName("rozwijanyCennik");
+            var i;
+
+            for (i = 0; i < rozw.length; i++) {
+              rozw[i].addEventListener("click", function() {
+                this.classList.toggle("rozwactiveCennik");
+                var rozwijanytekstCennik = this.nextElementSibling;
+                if (rozwijanytekstCennik.style.maxHeight){
+                    rozwijanytekstCennik.style.maxHeight = null;
+                } else {
+                    rozwijanytekstCennik.style.maxHeight = rozwijanytekstCennik.scrollHeight + "px";
+                } 
+              })
+            }
+            jQuery(document).ready(function($) 
+            {
+	            $(function()
+                {
+	                $('a[href*="#"]:not([href="#"])').click(function()
+                        {
+		                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+                                {
+		                            var target = $(this.hash);
+		                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		                            
+                                    if (target.length)
+                                    {
+			                            $('html,body').animate(
+                                            {
+			                                    scrollTop: target.offset().top-($('#menu').height() +($('#menu').height()*0.20) + 70)
+			                                }, 1000);
+			                            return false;
+		                            }
+		                        }
+	                    });
+	            });
+            });     
+      </script>
+</html>
+
+
+

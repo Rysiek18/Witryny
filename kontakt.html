@@ -54,14 +54,16 @@
                     &nbsp;
                     <button class="rozwijanyInfo">Informacja</button>
                     <div class="rozwijanytekstInfo">
-                        <p>&nbsp;Przegrywarka.pl działa jako niezarejestrowana działalność gospodarcza.&nbsp;&nbsp;Dzieje się tak, gdyż nośniki fizyczne są naszą pasją, a przychody z naszej działalności stanowią jedynie dodatek do wynagrodzenia z pracy na etacie.&nbsp;&nbsp;</p>
+                        <div style="padding-bottom: 2%;padding-top: 2%;"><p>Przegrywarka.pl działa jako niezarejestrowana działalność gospodarcza.</p><br><p>Nośniki fizyczne są naszą pasją, a przychody z naszej działalności stanowią jedynie dodatek do wynagrodzenia z pracy na etacie.</p></div>
                     </div>
                 </div>
+                <br>
+                <br>
                 <div class="kontaktprawo" id="kontaktprawo">
                     <p class="pkontaktp">Napisz do nas!</p>
                     <div class="formularz">
                         <form action="" method="post">
-                            <input type="text" name="first_name" placeholder="Imię" id="imie" onchange="SprawdzImie()"required><input type="text" name="last_name" placeholder="Nazwisko" id="nazwisko" onchange="SprawdzNazwisko()" required >
+                            <input type="text" name="first_name" placeholder="Imię" id="imie" class="full-width-small" onchange="SprawdzImie()"required><input type="text" name="last_name" placeholder="Nazwisko" id="nazwisko" class="full-width-small" onchange="SprawdzNazwisko()" required >
                             <input type="text" name="subject" placeholder="Temat" class="full-width" id="temat" onchange="SprawdzTemat()"required >
                             <input type="text" name="email" placeholder="E-mail" class="full-width" id="email" onchange="SprawdzEmail()" required>
                             <textarea rows="5" name="message" cols="50" placeholder="Twoja Wiadomość" class="full-width" id="wiadomosc" onchange="SprawdzWiadomosc()" required></textarea>

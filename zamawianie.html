@@ -26,7 +26,7 @@
         </div>
         <div class="tlo" id="tlo">
             <div class="tresc" id="tresc">
-                <div style="font-size: 110%;line-height: 1.75em;padding: 1em;">
+                <div class="zamawianie">
 
                     <div class ="politykaprywatnosci" style="font-size: 18pt;font-weight:bold;position: sticky;width:100%;background-color: white;padding:0.8em;z-index:9999;">
                         <p style="text-align: center;">Jak wygląda proces zamawiania i realizacji usług w naszym sklepie?</p>
@@ -71,35 +71,73 @@
                             <p>Tuż przed wysłaniem zamówienia do firmy, musicie Państwo zaznaczyć niezbędne zgody, abyśmy mogli bez przeszkód świadczyć dla Państwa usługi na najwyższym poziomie.</p>
                             <p>
                                 <u>Nasza firma obsługuje obecnie 3 metody płatności:</u><br><br>
-                                <div style="display:grid;grid-template-columns: 1fr 1fr 1fr;">
-                                    <div>
-                                        <p style="text-align:center;font-weight:bold;font-size:110%;">Płatność za pomocą BLIK-a</p>
-                                        <p>
-                                            <strong>Odbiorca:</strong> Przegrywarka.pl<br>
-                                            <strong>Numer Telefonu:</strong> 000 000 000<br>
-                                            <strong>Tytuł:</strong> Zamówienie nr XXXXXX<br>
-                                        </p>
-                                        <br>
-                                        <p style="text-align:center;font-style:italic;">Gdzie X jest numerem zamówienia</p>
+                                <div class="platnosci" style="display:flex;">
+                                    <div class="szersze">
+                                        <p style="text-align:center;font-weight:bold;font-size:110%;padding-top: 0.5em;padding-bottom: 0.5em;height:20%;">Płatność BLIK-iem</p>
+                                        <table>
+                                            <tbody><tr>
+                                              <th class="cena4"></th>
+                                              <th class="definicja2">Dane</th>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Odbiorca:</th>
+                                              <td class="definicja">Przegrywarka.pl</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Numer Telefonu:</th>
+                                              <td class="definicja">000 000 000</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Tytuł:</th>
+                                              <td class="definicja">Zamówienie nr XXXXXX</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
                                     </div>
-                                    <div >
-                                        <p style="text-align:center;font-weight:bold;font-size:110%;">Płatność przelewem na Konto</p>
-                                        <p>
-                                            <strong>Odbiorca:</strong> Przegrywarka.pl<br>
-                                            <strong>Numer Konta:</strong> 00 0000 0000 0000 0000 0000 0000<br>
-                                            <strong>Tytuł:</strong> Zamówienie nr XXXXXX<br>
-                                        </p>
-                                        <br>
-                                        <p style="text-align:center;font-style:italic;">Gdzie X jest numerem zamówienia</p>
+                                    <div class="szersze">
+                                        <p style="text-align:center;font-weight:bold;font-size:110%;padding-top: 0.5em;padding-bottom: 0.5em;height:20%;">Płatność przelewem na Konto</p>
+                                        <table>
+                                            <tbody><tr>
+                                              <th class="cena4"></th>
+                                              <th class="definicja2">Dane</th>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Odbiorca:</th>
+                                              <td class="definicja">Przegrywarka.pl</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Numer Konta:</th>
+                                              <td class="definicja">00 0000 0000 0000 0000 0000 0000</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Tytuł:</th>
+                                              <td class="definicja">Zamówienie nr XXXXXX</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
                                     </div>
-                                    <div>
-                                        <p style="text-align:center;font-weight:bold;font-size:110%;">Płatność gotówką</p>
-                                        <p>
-                                            <strong>Ulica:</strong> Podleśna 5a<br>
-                                            <strong>Kod Pocztowy:</strong> 95-100<br>
-                                            <strong>Miasto:</strong> Zgierz<br>
-                                        </p><br>
-                                        <p style="text-align:center;font-style:italic;">Odbiór i płatność za zamówienie w punkcie jest dostępny jedynie po wcześniejszym umówieniu się ze Sprzedawcą</p>
+                                    <div class="szersze">
+                                        <p style="text-align:center;font-weight:bold;font-size:110%;padding-top: 0.5em;padding-bottom: 0.5em;height:20%;">Płatność gotówką</p>    
+                                                   
+                                        <table>
+                                            <tbody><tr>
+                                              <th class="cena4"></th>
+                                              <th class="definicja2">Dane</th>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Ulica:</th>
+                                              <td class="definicja">Pl. Kilinskiego 1</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Kod pocztowy</th>
+                                              <td class="definicja">95-100</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Miasto</th>
+                                              <td class="definicja">Zgierz</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             <br>
@@ -139,28 +177,60 @@
                             <br>
                             <p style="text-align:center;text-decoration:underline">Uwaga! Paczki wysyłane Pocztą Polską muszą być przesyłką poleconą (Klient musi mieć list przewozowy [numer śledzenia] oraz dowód zakupu). W przeciwnym razie nie ma możliwości reklamacji u dostawcy pocztowego w przypadku zgubienia/uszkodzenia przesyłki, a usługa zamówiona w sklepie <strong>Przegrywarka.pl</strong> może nie zostać zrealizowana.</p>
                             <br>
-                            <div style="display:grid;grid-template-columns: 1fr 1fr ;">
-                                    <div>
-                                        <p style="text-align:center;font-weight:bold;font-size:110%;">Wysyłka na adres Sklepu</p>
-                                        <p>
-                                            <strong>Odbiorca:</strong> Krzysztof Janicki<br>
-                                            <strong>Numer Telefonu:</strong> 000 000 000<br>
-                                            <strong>E-Mail:</strong> kontakt@przegrywarka.pl<br>
-                                            <strong>Adres:</strong> ul.Podleśna 5a, 95-100 Zgierz<br>
-                                        </p>
-                                        <br>
+                            <div class="platnosci" style="display:flex;">
+                                    <div class="szerszeB">
+                                        <p style="text-align:center;font-weight:bold;font-size:110%;padding-top: 0.5em;padding-bottom: 0.5em;height:20%;">Wysyłka na adres Sklepu</p>
+                                        <table>
+                                            <tbody><tr>
+                                              <th class="cena4"></th>
+                                              <th class="definicja2">Dane</th>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Odbiorca</th>
+                                              <td class="definicja">Przegrywarka.pl</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Numer Telefonu</th>
+                                              <td class="definicja">000 000 000</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Adres</th>
+                                              <td class="definicja">Pl. Kilinskiego 1, Zgierz</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="pojecie">Kod Pocztowy</th>
+                                                <td class="definicja">95-100</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
                                     </div>
-                                    <div >
-                                        <p style="text-align:center;font-weight:bold;font-size:110%;">Płatność przelewem na Konto</p>
-                                        <p>
-                                            <strong>Odbiorca:</strong> Krzysztof Janicki<br>
-                                            <strong>Numer Telefonu:</strong> 000 000 000<br>
-                                            <strong>E-Mail:</strong> kontakt@przegrywarka.pl<br>
-                                            <strong>Dane Paczkomatu:</strong> ZGI01A  ul.Kasprowicza 6, 95-100 Zgierz<br>
-                                        </p>
-                                        <br>
+                                    <div class="szerszeB">
+                                        <p style="text-align:center;font-weight:bold;font-size:110%;padding-top: 0.5em;padding-bottom: 0.5em;height:20%;">Wysyłka do paczkomatu</p>
+                                        <table>
+                                            <tbody><tr>
+                                              <th class="cena4"></th>
+                                              <th class="definicja2">Dane</th>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Odbiorca</th>
+                                              <td class="definicja">Przegrywarka.pl</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">Numer Telefonu</th>
+                                              <td class="definicja">000 000 000</td>
+                                            </tr>
+                                            <tr>
+                                              <th class="pojecie">E-mail</th>
+                                              <td class="definicja">kontakt@przegrywarka.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="pojecie">Dane Paczkomatu</th>
+                                                <td class="definicja">ZGIPK1  Plac Kilinskiego 1, 95-100 Zgierz</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
                                     </div>
-                            </div>
+                                </div>
                             <br>
                             <strong style="font-size:120%;">5. Realizacja zamówienia</strong>
                             <hr><br>

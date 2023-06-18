@@ -100,7 +100,7 @@ font-family: furore;
 	width: 75%;
 	display: flex;
 	position: relative;
-	padding: 20px;
+	padding: 1%;
 	left:12.5%;
 	z-index: 2;
 }
@@ -179,7 +179,7 @@ h4{
 
 ///////////////////////////////////////////////*/
 .kontaktlewo{
-	padding: 30px;
+	padding: 2%;
 	width: 45%;
 	text-align: center;
 	font-size: 150%;
@@ -189,7 +189,7 @@ h4{
 }
 .pkontaktl{
 	font-family: furore;
-	padding-bottom: 30px;
+	padding-bottom: 4%;
 	text-align: left;
 }
 .tekst img, .tekst svg {
@@ -260,7 +260,7 @@ h4{
   
   .rozwijanytekstInfo {
 	font-family: calibri;
-	padding: 0 20px 0 20px;
+	padding: 0 15px 0 15px;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
@@ -274,7 +274,7 @@ h4{
 
 .kontaktprawo{
 	width: 55%;
-    padding: 30px;
+    padding: 2%;
     text-align: center;
     font-size: 150%;
 	justify-content:center;
@@ -287,7 +287,7 @@ h4{
 
 .pkontaktp{
 	font-family: furore;
-	padding-bottom: 30px;
+	padding-bottom: 4%;
 	text-align: center;
 }
 input,textarea
@@ -476,7 +476,7 @@ text-align: right;
 	box-shadow: inset 0 1px 0 black, inset 0 -1px 0 black;
 }
   td, th{
-	padding: 10px;
+	padding: 0.85%;
 	border: solid 1px black;
 	background-clip: padding-box;
 
@@ -824,7 +824,7 @@ width: 100%;
 	font-size: 75%;
 }
 .item_span1_styl{
-
+	height: 90%;
 	padding-bottom: 2%;
 }
 .item_span2_styl{
@@ -981,6 +981,34 @@ video{
 .poznajsprzet{
 	width: 70%;
 }
+.zamawianie{
+	font-size: 110%;
+	line-height: 1.75em;
+	padding: 1em;
+}
+.szersze{
+	width: 33.3333%;
+	padding: 1%;
+}
+.szerszeB{
+	width: 50%;
+	padding: 1%;
+}
+.szersze table{
+	height:80%;
+}
+.menuaudio hr{
+	width: 80%;
+	margin-left: 15px;
+}
+.menuvideo hr{
+	width: 80%;
+	margin-left: 15px;
+}
+.imgguzik{
+	max-width: 100%;
+	height: 2em;
+}
 @media only screen and (max-width: 1650px){
 	.tresc{
 		width: 85%;
@@ -1058,6 +1086,7 @@ video{
 	.uslugi_wynik{
 		flex-basis: 48%;
 	}
+
 	.ostatni{
 		display: none;
 	}
@@ -1099,15 +1128,32 @@ video{
 		width: 75%;
 		height: 75%;
 	}
+	.tresc{
+		padding: 2.5%;
+	}
+	.item_styl{
+		flex-basis: 48%;
+	}
+}
+@media only screen and (max-width: 1000px){
+	.szersze{
+		width: 100%;
+	}
+	.szerszeB{
+		width: 100%;
+	}
+	.platnosci{
+		flex-direction: column;
+	}
+
 
 }
 
 
 
-
 @media only screen and (max-width: 800px){
 	body{
-		font-size: 18px;
+		font-size: 16px;
 		
 	}
 	.popularne{
@@ -1190,10 +1236,68 @@ video{
 	.poznajsprzet{
 		width: 100%;
 	}
+	.banner{
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	.full-width-small {
+		grid-column: 1 / 3;
+		position: relative;
+	  }
+	  .tresc{
+		padding: 4%;
+	}
+	.zamawianie{
+		padding: 0;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
 }
 @media only screen and (max-width: 650px){
 .logo{
 	width: 100%;
 	height: 100%;
+}
+.menuav{
+	display: flex;
+	flex-direction: column;
+}
+.menuaudio{
+	width: 100%;
+}
+.menuvideo{
+	width: 100%;
+}
+.nosniki{
+	text-align: center;
+}
+.menuaudio hr{
+	width: 90%;
+	margin: 0;
+	margin-left:5%;
+	margin-right:5%;
+}
+.menuvideo hr{
+	width: 90%;
+	margin: 0;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.uslugi_wynik_siatka {
+flex-basis: 100%;
+}
+.uslugi_wynik {
+	flex-basis: 100%;
+}
+.uslugi_wynik_lista{
+	font-size: 100%;
+}
+.span_lista_4{
+	font-size: 100%;
+}
+.item_styl{
+	flex-basis: 100%;
 }
 }

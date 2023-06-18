@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="banner" id="banner">
-            <img class="logo"src="Obrazki/LogoStrony.png"  alt="logo">
+            <img class="logo" src="Obrazki/LogoStrony.png"  alt="logo">
           </div>
         <div class="menu" id="menu">
             <button class="rozwijaneMenuGuzik">MENU</button>
@@ -62,9 +62,9 @@
                 <div class="kontaktprawo" id="kontaktprawo">
                     <p class="pkontaktp">Napisz do nas!</p>
                     <div class="formularz">
-                        <form action="" method="post">
-                            <input type="text" name="first_name" placeholder="Imię" id="imie" class="full-width-small" onchange="SprawdzImie()"required><input type="text" name="last_name" placeholder="Nazwisko" id="nazwisko" class="full-width-small" onchange="SprawdzNazwisko()" required >
-                            <input type="text" name="subject" placeholder="Temat" class="full-width" id="temat" onchange="SprawdzTemat()"required >
+                        <form>
+                            <input type="text" name="first_name" placeholder="Imię" id="imie" class="full-width-small" onchange="SprawdzImie()" required><input type="text" name="last_name" placeholder="Nazwisko" id="nazwisko" class="full-width-small" onchange="SprawdzNazwisko()" required >
+                            <input type="text" name="subject" placeholder="Temat" class="full-width" id="temat" onchange="SprawdzTemat()" required >
                             <input type="text" name="email" placeholder="E-mail" class="full-width" id="email" onchange="SprawdzEmail()" required>
                             <textarea rows="5" name="message" cols="50" placeholder="Twoja Wiadomość" class="full-width" id="wiadomosc" onchange="SprawdzWiadomosc()" required></textarea>
                             <span class="full-width">
@@ -248,7 +248,7 @@
             </div>
         </div>
         <div class="stopka" id="stopka">
-            <span class="lewo">Krzysztof Janicki Grupa 2</span> 
+            <div class="lewo"><p>©2023 Wszelkie Prawa Zastrzeżone</p></div>
         </div>
         <script>
             var H = $('#banner').height() + $('#menu').height() + $('#stopka').height();

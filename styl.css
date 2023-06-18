@@ -1023,6 +1023,9 @@ video{
 	max-width: 100%;
 	height: 2em;
 }
+.lewo p{
+	padding: 0;
+}
 @media only screen and (max-width: 1650px){
 	.tresc{
 		width: 85%;

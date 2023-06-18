@@ -1026,6 +1026,9 @@ video{
 .lewo p{
 	padding: 0;
 }
+.politykaprywatnosci{
+	position:sticky;
+}
 @media only screen and (max-width: 1650px){
 	.tresc{
 		width: 85%;
@@ -1272,7 +1275,9 @@ video{
 		padding-top: 1em;
 		padding-bottom: 1em;
 	}
-
+	.politykaprywatnosci{
+		position:unset;
+	}
 }
 @media only screen and (max-width: 650px){
 .logo{

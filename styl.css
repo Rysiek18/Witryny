@@ -1300,4 +1300,10 @@ flex-basis: 100%;
 .item_styl{
 	flex-basis: 100%;
 }
+.tabela{
+	overflow-x: auto;
+}
+.sticky{
+	position:unset;
+}
 }

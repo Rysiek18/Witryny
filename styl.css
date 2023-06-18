@@ -151,7 +151,7 @@ font-family: furore;
 	text-align: center;
 	float: left;
 	width:100%;
-	padding: 2%;
+	padding: 1%;
 }
 p{
 	padding-left: 15px;	
@@ -1166,6 +1166,9 @@ video{
 
 
 @media only screen and (max-width: 800px){
+	.lewo{
+		padding: 2%;
+	}
 	body{
 		font-size: 16px;
 		
@@ -1319,5 +1322,8 @@ flex-basis: 100%;
 }
 .sticky{
 	position:unset;
+}
+.lewo{
+	padding: 3%;
 }
 }
